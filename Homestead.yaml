@@ -1,0 +1,36 @@
+---
+ip: "192.168.110.110"
+memory: 2048
+cpus: 1
+hostname: boilerplate
+name: boilerplate
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "."
+      to: "/home/vagrant/boilerplate"
+
+sites:
+    - map: boilerplate.app
+      to: "/home/vagrant/boilerplate/public"
+
+databases:
+    - homestead
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
