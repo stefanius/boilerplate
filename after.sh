@@ -23,4 +23,6 @@ sudo apt-get install apt-show-versions
 sudo apt-get update
 sudo dpkg -i webmin_1.840_all.deb
 
+#install PHP-MY-ADMIN
+
 
